@@ -2,260 +2,131 @@
 <html>
 <head>
     <title>Rage</title>
-    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project h2 {
-            color: #333;
-        }
-        .task {
-            margin-bottom: 10px;
-        }
-        .green {
-            color: #008000;
-        }
-        .yellow {
-            color: #FFD700;
-        }
-        .red {
-            color: #FF0000;
-        }
-        .purple {
-            color: #d000ff;
-        }
+    .project-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .project-table th,
+    .project-table td {
+        border: 1px solid #000;
+        padding: 20px;
+    }
+
+    .project-table th {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .project-table td {
+        vertical-align: top;
+    }
+
+    .project-table th:nth-child(1) {
+    width: 10%; /* Adjust as needed */
+}
+
+.project-table th:nth-child(2) {
+    width: 30%; /* Adjust as needed */
+}
+
+.project-table th:nth-child(3) {
+    width: 30%; /* Adjust as needed */
+}
+
+.project-table th:nth-child(4) {
+    width: 30%; /* Adjust as needed */
+}
     </style>
 </head>
 <body>
+
     <h1>Rage against the dying of the light</h1>
+    <table class="project-table">
+        <tr>
+            <th>Project</th>
+            <th>ONYX</th>
+            <th>Sparko</th>
+            <th>Moving Castle</th>
+        </tr>
 
-    <h2>19/09/2023</h2>  <span class="purple"> Passed </span>
-    <div class="TODO">
-        1. ONYX-1 : ball feeding machine push rod, made it work, encoder works, but Driver board not working well, either the two from lab is faulty or I used the wrong code, try L298N tmr</div>
+        <tr>
+            <td>TODO</td>
 
+            <td>Electronics <ul>   
+                <li>PCB tutorials</li>
+                <li>Speaker integration</li></ul> 
 
-    <h2>18/09/2023</h2>  <span class="purple"> Passed </span>
+                Softwares <ul>   
+                <li>APP Game Manager class</li>
+                <li>APP Programmable Interface</li></ul>  
 
-    <div class="TODO">
-        1. ONYX-1 : replaced game profile part with game program, done injecting program from quick start view and programs views 
-        2. Ideabucks : Deconstruct ideas, using API back and forth to try to divide idea, by main point and category. 
+                Hardwares <ul>   
+                <li>Waiting 5 sets of full devices</li>
+                <li>Ball Feeding Machine Prototype Push rod driver</li> </ul>
 
-        Ball feeding machine frame printing, 5 sets demos arrive this week
-        Ai-gen image (WebUI) power supply downed, replace another one tmr
+                Marketing & Promotion <ul>   
+                <li>Promotion video</li>
+                <li>Powerpoint renew</li>
+                <li>Kickstarter</li> </ul>  </td>
 
-        TODO : further specify the functions in game manager and game mode  </div>
+            <td>App Infrasture<ul>   
 
-    <h2>12/09/2023</h2>  <span class="purple"> Passed </span>
-    <div class="TODO">
-        1. App integration
-        2. Stable Diffusion keep working
-        3. Moving castle motors control
-        4. Think how to implement Paradiam shift/idea creation in ideabank
-    </div>
+                <li>Login Authication</li>
+                <li>User Database Namespace</li></ul> 
 
-    <h2>11/09/2023</h2>  <span class="purple"> </span>
-    <div class="other tasks">
-        1. Reinstall Windowss 10 Pro, setting up Rhnio, VS Code, Fusion 360 with generative design
-        2. Set up stable diffusion SDXL on webUI, later designing logo, poster and training profile, and idea illustration
-    </div>
+                Features <ul>   
+                <li>Idea slicer</li>
+                <li>Idea brainstorm</li></ul>  
 
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. further implement Bluetooth manager functions using new architecture
-            2. Relocate previous functions, mainly bluetooth and game manager functions
-            3. 70% views setted up
-        </div>
-    </div>
+                Researches <ul>   
+                <li>Paradiam Shifts</li>
+                <li>Literature-based discovery</li> 
+                <li>Graph Embeding</li> 
+            </ul> 
 
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1.  /
-            
-            TODO : run CL/CD to know what is the next steps
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. /
-
-            TODO : Find suitable high torque medium speed motors
-        </div>
-    </div>
-
-    <h2>10/09/2023</h2>  <span class="purple"> </span>
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. Updated draw.io mindmpa on bluetooth part
-            2. Break down bluetooth manager, included bluetoth service, workable ble connection with hardware
-
-            TODO : further implement Bluetooth manager functions using new architecture
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1.  TODO : run CL/CD to know what is the next steps
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. Brushless motors both work, its 24V rated voltage, but I think the motors are too nig, found some smaller brushless motors but not high torque small size ones
-
-            TODO : Find suitable high torque medium speed motors
-        </div>
-    </div>
+                Opensource projects helper <ul>   
+                    <li>GPT Researcher</li>
+                    <li>WebUI/ComfryUI</li> 
+                    <li>Quivz</li> 
+                </ul> </td>
 
 
-    <h2>09/09/2023</h2>  <span class="purple"> Draft </span>
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. Edit draw.io, change the composition in bluetooth mangaer and game manager to make it more align with clean architecture
-            2. Coding, reloocate code from old cleanreswift project
-            3. Bought portable SSD from SSP
-        </div>
-    </div>
+                <td>Electronics<ul>   
 
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1. /
-        </div>
-    </div>
+                    <li>Motor drivers</li></ul> 
+    
+                    Mechanics <ul>   
+                    <li>Shock Avoidance</li>
+                    <li>push asist motors specs</li></ul>  
+    
+                    3D printing <ul>   
+                    <li>Core frame</li>
+                    <li>Parametric size</li>
+                </ul> 
+    </td>
+        </tr>
 
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. /
-        </div>
-    </div>
+        <tr>
+            <td>2023/09/20</td>
 
+            <td> 
+                <li>ESP32 Push rod driver Push rod with encoder works</li>
+                <li>Motor driver DFR0601 didnt work, have noise in the serial signal might be due to faulty driver.</li>
+                <li>Reorganise plan charts</li>
+                    </td>
+            <td><li>Sucessfully run GPT Researcher, depth not quite enough, and stands are easily biased, try to ask neutrul questions</li>
+                <li>shared ideas with three people</li></td>
+            <td>shared ideas with three people</td>
 
-    <h2>08/09/2023</h2>  <span class="purple"> Draft </span>
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. /
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1. Learn SwiftUI Cookbook, chapter 8, animation part, and put concepts like rotate3D into the idea bubbles display
-            2. Played Stable Diffusion in Dream Studio, wondering how to ai generate images for illustrating ideas, or as reference
-            
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. Printing the wheel adopter, back and fourth, first success assemble
-        </div>
-    </div>
+        </tr>
 
 
-    <h2>07/09/2023</h2>  <span class="purple"> Draft </span>
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. /
-        </div>
-    </div>
 
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1. Draw ideabucks project workflow, and put it in the repo
-            2. Looked at Graph embedding and GNN, 
-
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. Printing the wheel adopter, back and fourth, 
-        </div>
-    </div>
-
-
-    <h2>06/09/2023</h2>  <span class="purple"> Draft </span>
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            1. Learn PCB from Youtube Video, but still not ok to follow the tutorial, found it so complicated, a lot of subtlies in the process.
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            1. Refactor the app, maybe minor UI change
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            1. Printing the wheel adopter, back and fourth
-        </div>
-    </div>
-
-    <hr>
-
-    <h2>05/09/2023  </h2> <span class="purple"> <h3> 5H40mins </h3>  </span>  
-    <div class="project">
-        <h2>ONYX</h2>
-        <div class="task">
-            <span class="purple"> 2H </span> 1. App redesign <span class="green">(draw.io mind map using Redux, MVVM and Clean architecture done, and created new project for the right format) </span> <span class="yellow"> relocated code feature by feature, game, program then analysis </span>
-        </div>
-        <div class="task">
-            <span class="purple"> 20mins </span> 2. Study of Movie App <span class="green">(only learnt middleware of Redux, not so useful in my case at this moment, learn other things) </span> <span class="yellow"> [ look for other skills used]</span>
-        </div>
-        <div class="task red">
-            3. Learn PCB from Scratch {Problem, didn’t start this part, not motivated enough, tmr put it as priority}
-        </div>
-        <div class="task red">
-            4. Understand the current version of ONYX PCB {Problem, didn’t start this part, not motivated enough, tmr put it as priority}
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Ideabucks</h2>
-        <div class="task">
-            <span class="purple"> 2H </span> 1. Prompt Engineering, streamline classes layer <span class="green">(done, now putting open service more dumb, the gpt3.5 turbo use “role” concept to distinguish guidance and request which is more readable and easy to change)</span>
-        </div>
-        <div class="task red ">
-            2. Google/Firebase user login, change of namespace in database <span class="yellow">[put it as priority tmr]</span>
-        </div>
-        <div class="task green">
-            <span class="purple"> 40mins </span>  3. UI issue, bubbles keep delay loading, fix bug (solved before sleep, the key is putting the loading of the second view model when the primary view appear to buy time.)
-        </div>
-    </div>
-
-    <div class="project">
-        <h2>Moving Castle</h2>
-        <div class="task">
-            <span class="purple"> 20mins </span>   1. 3D printing Adopter for servo and brushless motor <span class="green">(found some dimension issue, bearing case fitting solved)</span>
-        </div>
-        <div class="task">
-            <span class="purple"> 20mins </span> 2. 3D printing joint mechanism using traditional wood joint connection method <span class="green">(the wooden joint need to be more easy to fit in)</span>
-        </div>
-    </div>
-
+    </table>
 </body>
 </html>
